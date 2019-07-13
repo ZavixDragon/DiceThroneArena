@@ -1,0 +1,83 @@
+{
+    "SavePath": "Cards",
+    "SaveName": "AttackUpgrade",
+    "ImportedConstants": [ "SharedResources.json" ],
+    "ImportedPrototypes": [ "SharedResources.json" ],
+    "Items": 
+    [
+        {
+            "Name": "Vicious Strike II",
+            "CP": "2",
+            "Roll1": "[^Fire] [^Fire] [^Fire]",
+            "Effect1": "Deal 3 damage\n\nOn [^Wind], inflict Knockdown",
+            "Move2Y": "9999",
+            "Name2": "",
+            "Roll2": "",
+            "Effect2": ""
+        },
+        {
+            "Name": "Vicious Strike III",
+            "CP": "3",
+            "Roll1": "[^Fire] [^Fire] [^Ice]",
+            "Effect1": "Deal 3 damage\n\nOn [^Wind], inflict Knockdown",
+            "Move2Y": "800",
+            "Name2": "Half and Half",
+            "Roll2": "Large Straight",
+            "Effect2": "Inflict Freeze and Frostburn"
+        }
+    ],
+    "Blueprint": 
+    {
+        "Prototype": "CardBlueprint",
+        "Elements": 
+        [
+            {
+                "Prototype": "CardImage",
+                "Source": "^AttackUpgrade"
+            },
+            {
+                "Prototype": "CpText",
+                "Content": "{~CP}CP"
+            },
+
+            {
+                "Prototype": "UpgradeTitle",
+                "Content": "~Name"
+            },
+            {
+                "Prototype": "AttackUpgradeRollBar",
+                "Y": "270"  
+            },
+            {
+                "Prototype": "AttackUpgradeRollBarText",
+                "Content": "~Roll1",
+                "Y": "270"
+            },
+            {
+                "Prototype": "CardNormalText",
+                "Content": "~Effect1",
+                "Y": "360"
+            },
+
+            {
+                "Prototype": "UpgradeTitle",
+                "Content": "~Name2",
+                "Y": "#{~Move2Y} + 0"
+            },
+            {
+                "Prototype": "AttackUpgradeRollBar",
+                "Y": "#{~Move2Y} + 10"  
+            },
+            {
+                "Prototype": "AttackUpgradeRollBarText",
+                "Content": "~Roll2",
+                "Y": "#{~Move2Y} + 10"
+            },
+            {
+                "Prototype": "CardNormalText",
+                "Content": "~Effect2",
+                "Y": "#{~Move2Y} + 100"
+            }
+        ]
+    }
+}

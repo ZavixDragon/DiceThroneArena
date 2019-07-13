@@ -1,0 +1,37 @@
+{
+    "SavePath": "Cards",
+    "SaveName": "RollPhaseAction",
+    "ImportedConstants": [ "SharedResources.json" ],
+    "ImportedPrototypes": [ "SharedResources.json" ],
+    "Items": 
+    [
+        {
+            "Name": "TIP IT!",
+            "CP": "1",
+            "Effect": "Something with dice thats tots legitimate. And maybe another effect for show"
+        }
+    ],
+    "Blueprint": 
+    {
+        "Prototype": "CardBlueprint",
+        "Elements": 
+        [
+            {
+                "Prototype": "CardImage",
+                "Source": "^RollPhaseAction"
+            },
+            {
+                "Prototype": "CpText",
+                "Content": "{~CP}CP"
+            },
+            {
+                "Prototype": "PhaseActionTitle",
+                "Content": "~Name"
+            },
+            {
+                "Prototype": "PhaseActionText",
+                "Content": "~Effect"
+            }
+        ]
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "Constants": 
+    {
+        "CardWidth": "675",
+        "CardHeight": "1050",
+
+        "TitleFont": "The Bold Font",
+        "NormalFont": "Doris PP",
+
+        "AttackUpgrade": "../Images/AttackUpgrade.png",
+        "BlockUpgrade": "../Images/BlockUpgrade.png",
+        "InstantAction": "../Images/InstantAction.png",
+        "MainPhaseAction": "../Images/MainPhaseAction.png",
+        "RollPhaseAction": "../Images/RollPhaseAction.png",
+        "RollBar": "../Images/RollBar.png",
+
+        "Wind": "Icons/Wind.png",
+        "Earth": "Icons/Earth.png",
+        "Water": "Icons/Water.png",
+        "Ice": "Icons/Ice.png",
+        "Lightning": "Icons/Lightning.png",
+        "Fire": "Icons/Fire.png"
+    },
+    "Prototypes": 
+    {
+        "CardBlueprint": 
+        {
+            "Width": "^CardWidth",
+            "Height": "^CardHeight"
+        },
+        "CardImage": 
+        {
+            "Type": "Image",
+            "X": "0",
+            "Y": "0",
+            "Width": "^CardWidth",
+            "Height": "^CardHeight"
+        },
+        "CardText": 
+        {
+            "Type": "Text",
+            "Color": "FFFFFF",
+            "X": "50",
+            "Width": "575"
+        },
+        "CardTitleText": 
+        {
+            "Prototype": "CardText",
+            "Font": "^TitleFont",
+            "FontSize": "60",
+            "Height": "0",
+            "VerticalAlignment": "Bottom"
+        },
+        "CardNormalText": 
+        {
+            "Prototype": "CardText",
+            "Font": "^NormalFont",
+            "FontSize": "30",
+            "Height": "0",
+            "VerticalAlignment": "Top"
+        },
+
+        "CpText":
+        {
+            "Prototype": "CardNormalText",
+            "X": "175",
+            "Y": "75",
+            "Width": "900",
+            "Height": "45",
+            "HorizontalAlignment": "Left"
+        },
+
+        "InstantActionTitle":
+        {
+            "Prototype": "CardTitleText",
+            "Y": "375"
+        },
+        "InstantActionText": 
+        {
+            "Prototype": "CardNormalText",
+            "Y": "450"
+        },
+
+        "PhaseActionTitle":
+        {
+            "Prototype": "CardTitleText",
+            "Y": "325"
+        },
+        "PhaseActionText": 
+        {
+            "Prototype": "CardNormalText",
+            "Y": "400"
+        },
+
+        "UpgradeTitle": 
+        {
+            "Prototype": "CardTitleText",
+            "FontSize": "44",
+            "Y": "260"
+        },
+
+        "BlockUpgradeDice": 
+        {
+            "Type": "Text",
+            "Font": "^NormalFont",
+            "FontSize": "34",
+            "Color": "212121",
+            "X": "484",
+            "Y": "280",
+            "Width": "47",
+            "Height": "47"
+        },
+        "BlockUpgradeText":
+        {
+            "Prototype": "CardNormalText",
+            "Y": "380"
+        },
+
+        "AttackUpgradeRollBar": 
+        {
+            "Type": "Image",
+            "Source": "^RollBar",
+            "X": "110",
+            "Width": "455",
+            "Height": "80"
+        },
+        "AttackUpgradeRollBarText":
+        {
+            "Type": "Text",
+            "Font": "^NormalFont",
+            "FontSize": "34",
+            "Color": "FFD203",
+            "X": "110",
+            "Width": "455",
+            "Height": "80"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "SavePath": "Cards",
+    "SaveName": "InstantAction",
+    "ImportedConstants": [ "SharedResources.json" ],
+    "ImportedPrototypes": [ "SharedResources.json" ],
+    "Items": 
+    [
+        {
+            "Name": "TRIPLE TIP IT POWER!",
+            "CP": "1",
+            "Effect": "Something with dice thats tots legitimate. And maybe another effect for show"
+        }
+    ],
+    "Blueprint": 
+    {
+        "Prototype": "CardBlueprint",
+        "Elements": 
+        [
+            {
+                "Prototype": "CardImage",
+                "Source": "^InstantAction"
+            },
+            {
+                "Prototype": "CpText",
+                "Content": "{~CP}CP"
+            },
+            {
+                "Prototype": "InstantActionTitle",
+                "Content": "~Name"
+            },
+            {
+                "Prototype": "InstantActionText",
+                "Content": "~Effect"
+            }
+        ]
+    }
+}
